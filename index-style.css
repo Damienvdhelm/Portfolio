@@ -1,0 +1,234 @@
+:root {
+    --main-bg-header: #23b6ff;
+    --main-bg-nav: #303c54;
+    --main-bg-footer: #303c54;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+html,
+body {
+    overflow-y: hidden;
+    height: 100%;
+}
+
+body {
+    overflow-y: scroll;
+    position: relative;
+}
+
+body::-webkit-scrollbar {
+    width: 0px;
+}
+
+body {
+    scrollbar-width: none;
+}
+
+body {
+    -ms-overflow-style: none;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    background-color: var(--main-bg-header);
+    color: white;
+    padding: 1em;
+}
+
+p {
+    font-size: larger;
+}
+
+.intro {
+    background-color: rgb(148, 148, 148);
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 30px;
+}
+
+/* CSS for buttons in main content */
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 30px;
+    background-color: #C0C0C0;
+    color: white;
+    padding: 20px;
+}
+
+.main-content div {
+    margin-top: 20px;
+}
+
+.main-content button {
+    padding: 25px;
+    font-size: 24px;
+    text-align: center;
+    font-size: xx-large;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: var(--main-bg-header);
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px rgb(215, 215, 215);
+}
+
+.main-content button:hover {
+    background-color: #1a8cff;
+}
+
+.main-content button:active {
+    background-color: #1a8cff;
+    box-shadow: 0 5px rgb(122, 122, 122);
+    transform: translateY(4px);
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 75px;
+}
+
+.container {
+    display: flex;
+    flex: 1;
+}
+
+.sidenav {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--main-bg-nav);
+    padding: 1em;
+    margin: 10px;
+    width: 200px;
+    padding: 15px;
+    border-radius: 30px;
+    flex-shrink: 0;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 1em;
+}
+
+.sidenav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+div.row {
+    padding-bottom: 16px;
+    padding-top: 16px;
+}
+
+.sidenav ul a {
+    color: white;
+    padding-bottom: 16px;
+    padding-top: 16px;
+    text-decoration: none;
+}
+
+.sidenav ul a:hover {
+    text-decoration: underline;
+}
+
+.fa-solid,
+.fa-regular {
+    margin: 8px;
+}
+
+footer {
+    background-color: var(--main-bg-footer);
+    width: 100%;
+    padding: 1.5em;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    color: #fff;
+    flex-wrap: wrap;
+}
+
+.intro1, .intro2 {
+    margin-bottom: 50px;
+}
+
+.cv-section {
+    margin-bottom: 20px;
+}
+
+.cv-section h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.cv-section h3 {
+    font-size: 1.2em;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.cv-section p {
+    margin: 5px 0;
+}
+
+.cv-section ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+@media (max-width: 600px) {
+    .main-content {
+        margin-left: 10px;
+    }
+
+    header h1 {
+        font-size: 20px;
+        margin: 5px;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .sidenav {
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 100%;
+        margin: 0;
+        border-radius: 0;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .sidenav ul {
+        display: flex;
+        flex-direction: row;
+        width: auto;
+    }
+
+    .sidenav ul a {
+        flex-direction: row;
+        padding: 10px;
+    }
+}
